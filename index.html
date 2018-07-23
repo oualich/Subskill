@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/aos-master/dist/aos.css" />
+        <script src="vendor/aos-master/dist/aos.js"></script>
+</head>
+<body>
+
+    <section>
+            <div class="container">
+                <div class=" wd-section">
+                    <div class="row">
+                        <div  data-aos="fade-up" class="col-md-6 col-sm-12">
+                            <div id="mainright">
+                                <div class="bg">
+                                    <li><a href="#"> <span class="fas fa-angle-left"></span>Retour</a></li>
+                                </div>
+                                <div class="pos-h1">
+                                    <h1 data-aos="fade-right">Rege Persarum bellis finitimis iniglu </h1>
+                                </div>
+                                <div class="pos-p">
+                                    <p data-aos="fade-right">Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div   data-aos="fade-down" class="col-md-6">
+                            <div id="mainform" class="innerdiv">
+                                <div id="notice"></div>
+                                <!-- Required Div Starts Here -->
+                                <form  id="form" name="form">
+                                    <h3>Créer un compte</h3>
+                                    <p>Veuillez renseigner les informations ci-dessous.</p>
+                                    <div class="col-middle-wrapper">    
+                                        <div id="genre-view">
+                                            <span>Vous êtes</span>                                  
+                                            <input type="radio" class="message_pri" name="message_pri" value="Mr" /><span> Mr </span>  
+                                            <input type="radio" class="message_pri" name="message_pri" value="Mme" /><span> Mme</span> 
+                                            <input type="radio" class="message_pri" name="message_pri" value="Mlle" /> <span> Mlle</span>                                        
+                                        </div> 
+                                    </div>
+                            
+                                    <div class="col-middle-wrapper">  
+                                        <div id="nom-view">                                     
+                                            <input id="nom" type="text" placeholder="Nom" class="color-nom">
+                                        </div>
+                                    </div>
+                                    <div class="col-middle-wrapper">      
+                                        <div id="prenom-view">                                 
+                                            <input id="prenom" type="text" placeholder="Prénom">
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-middle-wrapper">
+                                        <div id="email-view">                                 
+                                            <input id="email" type="text" placeholder="Email" >
+                                        </div>
+                                    </div>
+                                    <div class="col-middle-wrapper">
+                                        <div id="naissance-view">                                 
+                                            <input id="naissance" type="date" placeholder="Date de naissance" >
+                                        </div>
+                                    </div>
+                                    <div class="col-middle-wrapper">
+                                        <div id="cp-view">
+                                            <input id="cp" type="text" placeholder="Code Postal">
+                                        </div>
+                                    </div>
+                                    <div class="col-middle-wrapper">
+                                            <div id="password-view">
+                                                <input id="password" type="password" placeholder="Mot de passe" >
+                                                <i class="fas fa-eye" id="theicon" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" ></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-middle-wrapper">
+                                            <div id="password-view">
+                                                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirmation mot de passe" />
+                                                <i class="fas fa-eye" id="theicon" onmouseover="mouseoverPassc();" onmouseout="mouseoutPassc();" ></i>
+
+                                                <span id='message'></span>
+                                            </div>
+                                        </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="reglement" name="reglement" value="reglement" required />
+                                        <span for="reglement">J’accepte les conditions générales de ventes et les respecteraient <br> sans conditions. </span>
+                                    </div>
+                                    <div class="form-group"data-aos="fade-left" >
+                                        <div id="submit-view">
+                                            <input id="submit" onclick="myFunction()" type="button" value="Submit">
+                                        </div> 
+                                    </div>
+                                </form>
+                                <li><a href="">Vous avez déjà un compte ? Connectez-vous</a></li>
+                                <div id="clear"></div>
+                            </div>
+                            <div id="clear"></div>
+                            <div id="answers"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/validator.min.js"></script>
+    <script src="js/signup.js"></script>
+
+      <link rel="stylesheet" href="aos-master/dist/aos.css" />
+      <script src="aos-master/dist/aos.js"></script>
+
+      <script>
+            function mouseoverPass(obj) {
+          var obj = document.getElementById('password');
+          obj.type = "text";
+        }
+        function mouseoutPass(obj) {
+          var obj = document.getElementById('password');
+          obj.type = "password";
+        }
+        function mouseoverPassc(obj) {
+          var obj = document.getElementById('confirm_password');
+          obj.type = "text";
+        }
+        function mouseoutPassc(obj) {
+          var obj = document.getElementById('confirm_password');
+          obj.type = "password";
+        }
+        AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+
+  // Settings that can be overriden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+});
+        </script>
+</body>
+</html>
